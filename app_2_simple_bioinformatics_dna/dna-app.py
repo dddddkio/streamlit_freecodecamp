@@ -36,8 +36,11 @@ sequence_input = ">DNA Query 2\nGAACACGTGGAGGCAAACAGGAAGGTGAAGAAGAACTTATCCTATCAG
 #sequence = st.sidebar.text_area("Sequence input", sequence_input, height=250)
 sequence = st.text_area("Sequence input", sequence_input, height=250)
 sequence = sequence.splitlines()
+sequence
 sequence = sequence[1:] # Skips the sequence name (first line)
+sequence
 sequence = ''.join(sequence) # Concatenates list to string
+
 
 st.write("""
 ***
